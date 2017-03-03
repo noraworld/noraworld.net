@@ -1,0 +1,100 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 100px 0;
+}
+
+header {
+  text-align: center;
+  margin: 60px 0;
+}
+
+header .title {
+  text-decoration: none;
+  color: #3f2e2e;
+  font-family: "Open Sans";
+  font-size: 30px;
+}
+
+header .title:hover {
+  opacity: 0.8;
+}
+
+.contents {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.contents .content {
+  float: left;
+  /*display: inline-block;*/
+  /*border: 1px solid grey;*/
+  /*border-radius: 5px;*/
+  margin: 5px;
+}
+
+.contents .content.col-1 {
+  width: 990px;
+}
+
+.contents .content.col-2 {
+  width: 490px;
+}
+
+.contents .content p {
+  margin: 0;
+  padding: 10px;
+}
+
+.contents .content .title {
+  border-bottom: 1px solid grey;
+  background-color: #ddd;
+  border: 1px solid grey;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-family: BlinkMacSystemFont;
+}
+
+.contents .content .data {
+  padding: 25px 10px;
+  border: 1px solid grey;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: Menlo;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-top: 20px;
+  padding: 15px 0;
+  font-size: 11px;
+  color: #3f2e2e;
+}
+
+footer .copyright {
+  text-align: center;
+  color: #3f2e2e;
+  font-family: "Open Sans";
+  font-size: 10px;
+}
+
+footer .copyright a {
+  text-decoration: none;
+  color: #3f2e2e;
+  font-weight: bold;
+}
+
+footer .copyright a:hover {
+  border-bottom: 1px solid #3f2e2e;
+}
+
+.clearfix {
+  clear: both;
+  overflow: auto;
+}
