@@ -2,7 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Get the IP address</title>
+  <meta name="description" content="Get the request information such as public IP address, referrer, user agent.">
+  <title>noraworld.net</title>
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
