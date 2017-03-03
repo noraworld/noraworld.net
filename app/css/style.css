@@ -94,6 +94,10 @@ footer .copyright a:hover {
   border-bottom: 1px solid #3f2e2e;
 }
 
+.grey {
+  color: #666;
+}
+
 .clearfix {
   clear: both;
   overflow: auto;
