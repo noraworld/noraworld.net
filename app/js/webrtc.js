@@ -46,13 +46,20 @@ function getIPs(callback) {
   }, 1000);
 }
 
-getIPs(function(ip) {
+try {
+  getIPs(function(ip) {
+    var localIP = document.getElementById('local-ip-val');
+
+    if (ip.match(/^(192\.168\.|169\.254\.|10\.|172\.(1[6-9]|2\d|3[01]))/)) {
+      localIP.textContent = ip;
+    }
+    else {
+      localIP.textContent = "Unknown";
+    }
+  });
+}
+catch (e) {
   var localIP = document.getElementById('local-ip-val');
 
-  if (ip.match(/^(192\.168\.|169\.254\.|10\.|172\.(1[6-9]|2\d|3[01]))/)) {
-    localIP.textContent = ip;
-  }
-  else {
-    localIP.textContent = "unknown";
-  }
-});
+  localIP.textContent = "Unknown";
+}
