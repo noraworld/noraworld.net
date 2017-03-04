@@ -59,8 +59,8 @@
     </div>
     <div class="content col-1">
       <p class="title">Remote host</p>
-      <?php if ($_SERVER["REMOTE_HOST"] !== null): ?>
-        <p class="data"><?= $_SERVER["REMOTE_HOST"]; ?></p>
+      <?php if (gethostbyaddr($_SERVER["REMOTE_ADDR"]) !== $_SERVER["REMOTE_ADDR"]): ?>
+        <p class="data"><?= gethostbyaddr($_SERVER["REMOTE_ADDR"]); ?></p>
       <?php else: ?>
         <p class="data grey">None</p>
       <?php endif ?>
