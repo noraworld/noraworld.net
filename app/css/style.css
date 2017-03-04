@@ -62,7 +62,7 @@ header .title:hover {
   border-top: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  font-family: "Menlo Regular", Menlo, Consolas, Liberation Mono, Courier, monospace;
+  font-family: Menlo, "Menlo Regular", Consolas, Liberation Mono, Courier, monospace;
 }
 
 footer {
@@ -78,14 +78,15 @@ footer {
 footer .copyright {
   text-align: center;
   color: #3f2e2e;
-  font-family: "Open Sans Regular";
+  font-family: BlinkMacSystemFont, "Segoe UI", "Open Sans Regular";
   font-size: 10px;
 }
 
 footer .copyright a {
   text-decoration: none;
   color: #3f2e2e;
-  font-family: "Open Sans Bold";
+  font-family: BlinkMacSystemFont, "Segoe UI", "Open Sans Bold";
+  font-weight: bold;
 }
 
 footer .copyright a:hover {
