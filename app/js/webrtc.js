@@ -46,25 +46,6 @@ function getIPs(callback) {
   }, 1000);
 }
 
-try {
-  getIPs(function(ip) {
-    var localIP = document.getElementById('local-ip-val');
-
-    if (ip.match(/^(192\.168\.|169\.254\.|10\.|172\.(1[6-9]|2\d|3[01]))/)) {
-      localIP.textContent = ip;
-    }
-    else {
-      localIP.textContent = "Unknown";
-    }
-  });
-}
-catch (e) {
-  var localIP = document.getElementById('local-ip-val');
-
-  localIP.textContent = "Unknown";
-  addClassName(localIP, 'grey');
-}
-
 var addClassName = function(element, classNameValue) {
   if (!element || typeof element.className === 'undefined' || typeof classNameValue !== 'string') {
     return;
@@ -89,4 +70,23 @@ var addClassName = function(element, classNameValue) {
   }
 
   return element;
+}
+
+try {
+  getIPs(function(ip) {
+    var localIP = document.getElementById('local-ip-val');
+
+    if (ip.match(/^(192\.168\.|169\.254\.|10\.|172\.(1[6-9]|2\d|3[01]))/)) {
+      localIP.textContent = ip;
+    }
+    else {
+      localIP.textContent = "Unknown";
+    }
+  });
+}
+catch (e) {
+  var localIP = document.getElementById('local-ip-val');
+
+  localIP.textContent = "Unknown";
+  addClassName(localIP, 'grey');
 }
