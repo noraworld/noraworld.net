@@ -62,4 +62,31 @@ catch (e) {
   var localIP = document.getElementById('local-ip-val');
 
   localIP.textContent = "Unknown";
+  addClassName(localIP, 'grey');
+}
+
+var addClassName = function(element, classNameValue) {
+  if (!element || typeof element.className === 'undefined' || typeof classNameValue !== 'string') {
+    return;
+  }
+
+  if (element.classList) {
+    element.classList.add(classNameValue);
+  }
+  else {
+    var classNames = element.className.replace(/^\s+|\s+$/g, '').split(' ');
+
+    if (classNames.toString() === '') {
+      classNames = [];
+    }
+
+    if (inArray(classNameValue, className) > -1) {
+      return;
+    }
+
+    classNames.push(classNameValue);
+    element.className = classNames.join(' ');
+  }
+
+  return element;
 }
