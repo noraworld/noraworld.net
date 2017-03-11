@@ -55,7 +55,7 @@
     </div>
     <div class="content col-2">
       <p id="local-ip" class="title">Local IP address</p>
-      <p id="local-ip-val" class="data"><noscript>JavaScript is disabled</noscript></p>
+      <p id="local-ip-val" class="data"><noscript class="grey">JavaScript is disabled</noscript></p>
     </div>
     <div class="content col-1">
       <p class="title">Remote host</p>

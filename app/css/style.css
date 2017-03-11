@@ -63,6 +63,7 @@ header .title:hover {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   font-family: Menlo, "Menlo Regular", Consolas, Liberation Mono, Courier, monospace;
+  word-wrap: break-word;
 }
 
 footer {
