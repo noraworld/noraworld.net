@@ -97,8 +97,13 @@
         <p class="data grey"><?= $language_result; ?></p>
       <?php endif ?>
     </div>
+    <div class="content col-2">
+      <p class="title">JavaScript</p>
+      <p id="js" class="data"><noscript>Disabled</noscript></p>
+      <script>document.querySelector('#js').textContent = 'Enabled';</script>
+    </div>
     <div class="content col-1">
-      <p class="title">Referrer</p>
+      <p class="title">Referrer <a href="/">Click here to confirm if referrer is enabled</a></p>
       <?php if ($_SERVER["HTTP_REFERER"] !== null): ?>
         <p class="data"><?= $_SERVER["HTTP_REFERER"] ?></p>
       <?php else: ?>
