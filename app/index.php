@@ -99,8 +99,12 @@
     </div>
     <div class="content col-2">
       <p class="title">JavaScript</p>
-      <p id="js" class="data"><noscript>Disabled</noscript></p>
+      <p id="js" class="data"><noscript class="grey">Disabled</noscript></p>
       <script>document.querySelector('#js').textContent = 'Enabled';</script>
+    </div>
+    <div class="content col-2">
+      <p class="title">Flash Player</p>
+      <p id="flash" class="data"><noscript class="grey">JavaScript is disabled</noscript></p>
     </div>
     <div class="content col-1">
       <p class="title">Referrer <a href="/">Click here to confirm if referrer is enabled</a></p>
