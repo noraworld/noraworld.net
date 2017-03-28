@@ -59,11 +59,16 @@ header .title:hover {
 .contents .content .title a {
   font-size: 14px;
   text-decoration: none;
-  color: #2da7f3;
+  color: #337ab7;
   padding-left: 5px;
 }
 
+.contents .content .title a:visited {
+  color: #337ab7;
+}
+
 .contents .content .title a:hover {
+  color: #23527c;
   text-decoration: underline;
 }
 
