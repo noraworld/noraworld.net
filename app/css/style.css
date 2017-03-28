@@ -60,7 +60,7 @@ header .title:hover {
   font-size: 14px;
   text-decoration: none;
   color: #337ab7;
-  padding-left: 5px;
+  margin-left: 5px;
 }
 
 .contents .content .title a:visited {
